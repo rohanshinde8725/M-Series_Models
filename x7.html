@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW X7</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ebe9e9;
+        }
+        .header {
+            background: #ee4f4f;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+        .section {
+            background: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .image-container {
+            text-align: center;
+        }
+        .image-container img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 10px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .grid img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .grid h3{
+            text-align: center;
+        }
+        .button-container {
+            text-align: center;
+        }
+        .button-container a button {
+            height: 2.5rem;
+            width: 100%;
+            max-width: 200px;
+            background-color: #ee4f4f;
+            border: 2px solid #ee4f4f;
+            color: white;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            display: block;
+            margin: auto;
+        }
+        .button-container a button:hover {
+            background: white;
+            color: black;
+            transition: 0.4s ease-out;
+        }
+        .button-container a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>BMW X7</h1>
+    </div>
+
+    <div class="container">
+        <div class="section image-container">
+            <img src="bmw-x7.jpg" alt="BMW X7">
+        </div>
+
+        <div class="section">
+            <h2>About the BMW X7</h2>
+            <p>The BMW X7 is the pinnacle of luxury and performance in the SUV lineup, offering a spacious interior and cutting-edge technology.</p>
+        </div>
+
+        <div class="section">
+            <h2>Specifications</h2>
+            <div class="grid">
+                <div>
+                    <p><strong>Engine:</strong> 4.4L TwinPower Turbo V8</p>
+                    <p><strong>Horsepower:</strong> 523 hp</p>
+                </div>
+                <div>
+                    <p><strong>0-60 mph:</strong> 4.5 sec</p>
+                    <p><strong>Fuel Economy:</strong> 19/24 mpg (city/highway)</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Gallery</h2>
+            <div class="grid">
+                <div>
+                    <h3>Exterior</h3>
+                    <img src="x7-exterior.jpg" alt="BMW X7 Exterior">
+                </div>
+                <div>
+                    <h3>Interior</h3>
+                    <img src="x7-interior.jpg" alt="BMW X7 Interior">
+                </div>
+            </div>
+        </div>
+
+        <div class="section button-container">
+            <a href="form-book.html"><button>Book Now</button></a>
+        </div>
+    </div>
+
+</body>
+</html>
