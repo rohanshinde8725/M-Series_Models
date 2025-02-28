@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW M8</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e6f2ff;
+        }
+        .header {
+            background: #003366;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+        .section {
+            background: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .image-container {
+            text-align: center;
+        }
+        .image-container img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 10px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .grid img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .grid h3{
+            text-align: center;
+        }
+        .button-container {
+            text-align: center;
+        }
+        .button-container a button {
+            height: 2.5rem;
+            width: 100%;
+            max-width: 200px;
+            background-color: #003366;
+            border: 2px solid #003366;
+            color: white;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            display: block;
+            margin: auto;
+        }
+        .button-container a button:hover {
+            background: white;
+            color: black;
+            transition: 0.4s ease-out;
+        }
+        .button-container a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>BMW M8</h1>
+    </div>
+
+    <div class="container">
+        <div class="section image-container">
+            <img src="bmw-m8.jpg" alt="BMW M8">
+        </div>
+
+        <div class="section">
+            <h2>About the BMW M8</h2>
+            <p>The BMW M8 is a high-performance grand tourer that offers breathtaking speed, luxury, and cutting-edge technology.</p>
+        </div>
+
+        <div class="section">
+            <h2>Specifications</h2>
+            <div class="grid">
+                <div>
+                    <p><strong>Engine:</strong> 4.4L TwinPower Turbo V8</p>
+                    <p><strong>Horsepower:</strong> 617 hp</p>
+                </div>
+                <div>
+                    <p><strong>0-60 mph:</strong> 3.0 sec</p>
+                    <p><strong>Fuel Economy:</strong> 15/21 mpg (city/highway)</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Gallery</h2>
+            <div class="grid">
+                <div>
+                    <h3>Exterior</h3>
+                    <img src="m8-exterior.jpg" alt="BMW M8 Exterior">
+                </div>
+                <div>
+                    <h3>Interior</h3>
+                    <img src="m8-interior.jpg" alt="BMW M8 Interior">
+                </div>
+            </div>
+        </div>
+
+        <div class="section button-container">
+            <a href="form-book.html"><button>Book Now</button></a>
+        </div>
+    </div>
+
+</body>
+</html>
