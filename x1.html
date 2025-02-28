@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW X1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .header {
+            background: #78c7a5;
+            color: black;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+        .section {
+            background: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .section button {
+            height: 2.5rem;
+            width: 100%;
+            max-width: 200px;
+            background-color: aqua;
+            border: 2px solid aqua;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            display: block;
+            margin: auto;
+        }
+        .section button:hover {
+            background: #fff;
+            transition: 0.4s ease-out;
+        }
+        .section a{
+            text-decoration: none;
+        }
+        .image-container {
+            text-align: center;
+        }
+        .image-container img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 10px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .grid img {
+            height: auto;
+            width: 100%;
+            border-radius: 10px;
+        }
+        .grid h3{
+            text-align: center;
+        }
+        @media (max-width: 1024px) {
+            .container {
+                padding: 15px;
+            }
+            .grid {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            }
+        }
+        @media (max-width: 768px) {
+            .header {
+                padding: 15px;
+            }
+            .section {
+                padding: 15px;
+            }
+            .section h2 {
+                font-size: 1.2rem;
+            }
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        @media (max-width: 480px) {
+            .header {
+                padding: 10px;
+            }
+            .section {
+                padding: 10px;
+            }
+            .section h2 {
+                font-size: 1rem;
+            }
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>BMW X1</h1>
+    </div>
+    <div class="container">
+        <div class="section image-container">
+            <img src="x1.jpg" alt="BMW X1">
+        </div>
+        <div class="section">
+            <h2>About the BMW X1</h2>
+            <p>The BMW X1 is a luxurious compact SUV that blends sporty performance with cutting-edge technology.</p>
+        </div>
+        <div class="section">
+            <h2>Specifications</h2>
+            <div class="grid">
+                <div>
+                    <p><strong>Engine:</strong> 2.0L TwinPower Turbo</p>
+                    <p><strong>Horsepower:</strong> 241 hp</p>
+                </div>
+                <div>
+                    <p><strong>0-60 mph:</strong> 6.2 sec</p>
+                    <p><strong>Fuel Economy:</strong> 25/34 mpg (city/highway)</p>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h2>Key Features</h2>
+            <ul>
+                <li>Intelligent All-Wheel Drive</li>
+                <li>Advanced Safety Features</li>
+                <li>Luxurious Interior</li>
+                <li>Innovative Infotainment System</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>Gallery</h2>
+            <div class="grid">
+                <div>
+                    <h3>Exterior</h3>
+                    <img src="x1-exterior.jpg" alt="BMW X1 Exterior">
+                </div>
+                <div>
+                    <h3>Interior</h3>
+                    <img src="x1-interior.jpg" alt="BMW X1 Interior">
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <a href="form-book.html"><button>Book now</button></a>
+        </div>
+    </div>
+</body>
+</html>
